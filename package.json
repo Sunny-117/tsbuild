@@ -19,7 +19,7 @@
     "node": ">=16"
   },
   "scripts": {
-    "dev": "npm run build --watch",
+    "dev": "tsup src/cli-*.ts --clean --splitting --dts --watch",
     "test": "vitest",
     "build": "tsup src/cli-*.ts --clean --splitting --dts",
     "d": "tsup",
